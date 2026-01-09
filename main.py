@@ -7,6 +7,7 @@ import os
 import asyncio
 import requests
 from back import answer
+from alive import keep_alive
 #
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -188,4 +189,5 @@ async def mathquote(ctx):
     except Exception as e:
         await ctx.send(f'Error fetching math quote: {e}')
 
+keep_alive()
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
