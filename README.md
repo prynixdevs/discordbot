@@ -1,6 +1,12 @@
 # Prynix Discord Bot
 
-A feature-rich Discord bot with AI-powered chat capabilities, moderation tools, and utility commands built with discord.py.
+> **Built by [Prynix](https://github.com/prynixdevs)** - A collaborative community of passionate high school developers exploring the world of technology through hands-on projects and continuous learning.
+
+A smart Discord bot with intelligent chat capabilities, moderation tools, and essential server utilities. Created by [Prasoon Kandel](https://github.com/prasoonkandel) and the Prynix team, this bot brings AI-powered assistance and useful features to your Discord server.
+
+## About Prynix
+
+Prynix is a team of ambitious high school students who share a common passion for technology and innovation. Founded and led by Prasoon Kandel, our community brings together young minds from around the world to collaborate, learn, and build the future together. We're proudly affiliated with the [Hack Club](https://hackclub.com/) network.
 
 ## Add to Your Server
 
@@ -21,13 +27,14 @@ Click the link above to add the bot to your Discord server.
 - `/kick4 <member>` - Kick a member from the server (requires Administrator or Moderator role)
 - `/spam <times> <text>` - Send repeated messages (requires Administrator or Moderator role)
 - `/notifyall <title> <description>` - Send notifications to all server members via DM (requires Administrator or Moderator role)
+- `/announcement <title> <description>` - Post an announcement in the current channel (requires Administrator or Moderator role)
 
 ### Utility Commands
 
 - `/calc <expression>` - Calculate mathematical expressions
 - `/chat <message>` - Chat with the AI bot in any channel
 - `/notify <member> <title> <description>` - Send a notification to a specific member
-- `/announcement <title> <description>` - Post an announcement in the current channel (requires Administrator or Moderator role)
+- `/mathquote` - Get an inspirational mathematics quote
 
 ### Automatic Features
 
@@ -129,22 +136,31 @@ Users can send direct messages to the bot to have AI-powered conversations.
 
 ## Developer
 
-Developed by **Prasoon Kandel**
+Developed by **[Prasoon Kandel](https://github.com/prasoonkandel)**
 
-- GitHub: [@prasoonkandel](https://github.com/prasoonkandel)
-- Community: [Prynix Developers](https://github.com/prynixdevs)
-
-### About the Developer
-
-Prasoon Kandel is a passionate student developer from Nepal, currently studying Grade 9 (Technical Education - Computer Engineering) at Kalika Manavgyan Secondary School. Skilled in multiple programming languages including Python, JavaScript, C/C++, C#, JAVA, and Arduino, with a focus on building innovative solutions and continuous learning.
+Prasoon is a passionate student developer from Nepal, currently studying Grade 9 (Technical Education - Computer Engineering) at Kalika Manavgyan Secondary School. Skilled in multiple programming languages including Python, JavaScript, C/C++, C#, JAVA, and Arduino, with a focus on building innovative solutions and continuous learning.
 
 ## Community
 
-This bot is developed as part of the **Prynix** community, a collaborative group of passionate high school developers exploring technology through hands-on projects.
+This bot is developed as part of the **[Prynix](https://github.com/prynixdevs)** community - a collaborative team of ambitious high school students who share a common passion for technology and innovation. We believe that age is just a number when it comes to creating meaningful solutions and pushing the boundaries of what's possible in tech.
 
-- Organization: [Prynix Developers](https://github.com/prynixdevs)
-- Affiliation: Proud member of [Hack Club](https://hackclub.com/)
-- Contact: prynixdevelopment@gmail.com
+### Connect With Us
+
+- **Organization**: [Prynix Developers](https://github.com/prynixdevs)
+- **Team Leader**: [Prasoon Kandel](https://github.com/prasoonkandel)
+- **Affiliation**: Proud member of [Hack Club](https://hackclub.com/) network
+- **Contact**: prynixdevelopment@gmail.com
+- **Location**: Nepal
+
+### What We Do
+
+At Prynix, we:
+
+- Build and collaborate on real-world projects
+- Learn new technologies and frameworks
+- Connect with peers who share similar interests
+- Participate in hackathons and coding challenges
+- Turn ideas into reality with mentorship and support
 
 ## Logging
 
@@ -159,6 +175,11 @@ Contributions, issues, and feature requests are welcome. Feel free to check the 
 This project is open source and available for educational purposes.
 
 ## Acknowledgments
+
+- Special thanks to all Prynix team members who contribute their time, skills, and passion
+- Grateful to [Hack Club](https://hackclub.com/) for connecting student developers worldwide
+- Built with passion by the upcoming generation of developers
+- Powered by discord.py and AI technology
 
 - Discord.py library for the excellent Discord API wrapper
 - The Prynix community for support and collaboration

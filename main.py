@@ -5,6 +5,7 @@ import logging
 from dotenv import load_dotenv
 import os
 import asyncio
+import requests
 from back import answer
 #
 load_dotenv()
@@ -16,8 +17,6 @@ intents.message_content = True
 intents.members = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
-
-
 
 @bot.event
 async def on_ready():
@@ -170,6 +169,23 @@ async def announcement(ctx, title: str, *, description: str):
         await ctx.send(embed=embed)
     except Exception as e:
         await ctx.send(f'Error: {e}')
-
+@bot.command()
+async def mathquote(ctx):
+    try:
+        response = requests.get('https://mathex.onrender.com/api/quotes')
+        data = response.json()
+        
+        quote = data.get('quote', 'No quote available')
+        author = data.get('author', 'Unknown')
+        
+        embed = discord.Embed(
+            description=f"## {quote}",
+            color=0x41acd0
+        )
+        embed.set_footer(text=f"— {author}")
+        
+        await ctx.send(embed=embed)
+    except Exception as e:
+        await ctx.send(f'Error fetching math quote: {e}')
 
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
