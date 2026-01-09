@@ -174,7 +174,7 @@ async def announcement(ctx, title: str, *, description: str):
 async def mathquote(ctx):
     await ctx.message.delete()
     requested = discord.Embed(
-        title="Notification",
+        title="Math Quote",
         description=f" {ctx.author.mention} has requested a math quote.",
         color=0x41acd0
     )
