@@ -19,6 +19,41 @@ intents.members = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 
+def split_message(text, max_length=2000):
+    # This part is written by ai after I got long messages error in discord. 
+    """Split a message into chunks at natural breaks (paragraphs, sentences)."""
+    if len(text) <= max_length:
+        return [text]
+    
+    chunks = []
+    while text:
+        if len(text) <= max_length:
+            chunks.append(text)
+            break
+      
+        split_pos = text.rfind('\n\n', 0, max_length)
+        if split_pos == -1:
+            split_pos = text.rfind('\n', 0, max_length)
+      
+        if split_pos == -1:
+            for delimiter in ['. ', '! ', '? ']:
+                pos = text.rfind(delimiter, 0, max_length)
+                if pos > split_pos:
+                    split_pos = pos + len(delimiter)
+        
+    
+        if split_pos == -1:
+            split_pos = text.rfind(' ', 0, max_length)
+        
+      
+        if split_pos == -1:
+            split_pos = max_length
+        
+        chunks.append(text[:split_pos].rstrip())
+        text = text[split_pos:].lstrip()
+    
+    return chunks
+
 @bot.event
 async def on_ready():
     print(f'We have logged in as {bot.user}')
@@ -54,7 +89,9 @@ async def on_message(message):
     if isinstance(message.channel, discord.DMChannel):
         try:
             response = answer(message.content)
-            await message.channel.send(response)
+            chunks = split_message(response)
+            for chunk in chunks:
+                await message.channel.send(chunk)
         except Exception as e:
             await message.channel.send(f'Error: {e}')
     await bot.process_commands(message)
@@ -101,7 +138,9 @@ async def calc(ctx, *, expression: str):
 async def chat(ctx, *, user_message):
     try:
         response = answer(user_message)
-        await ctx.send(response)
+        chunks = split_message(response)
+        for chunk in chunks:
+            await ctx.send(chunk)
     except Exception as e:
         await ctx.send(f'Error: {e}')
 
