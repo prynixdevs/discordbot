@@ -1,6 +1,6 @@
 # Prynix Discord Bot
 
-> **Built by [Prynix](https://github.com/prynixdevs)** - A collaborative community of passionate high school developers exploring the world of technology through hands-on projects and continuous learning.
+> **Built by [Prynix](https://github.com/prynixdevs)** which is a collaborative community of passionate high school developers exploring the world of technology through hands-on projects and continuous learning.
 
 A smart Discord bot with intelligent chat capabilities, moderation tools, and essential server utilities. Created by [Prasoon Kandel](https://github.com/prasoonkandel) and the Prynix team, this bot brings AI-powered assistance and useful features to your Discord server.
 
