@@ -4,6 +4,16 @@
 
 A smart Discord bot with intelligent chat capabilities, moderation tools, and essential server utilities. Created by [Prasoon Kandel](https://github.com/prasoonkandel) and the Prynix team, this bot brings AI-powered assistance and useful features to your Discord server.
 
+## 🔴 Status: Archived & Offline
+
+This bot is now **archived** and is **no longer active or running**.
+
+The current version is **offline will not work on discord**.
+
+However, the source code is still available for learning and experimentation. You are welcome to **fork this repository, modify it, and build your own version** based on this project.
+
+This project is no longer maintained.
+
 ## About Prynix
 
 Prynix is a team of ambitious high school students who share a common passion for technology and innovation. Founded and led by Prasoon Kandel, our community brings together young minds from around the world to collaborate, learn, and build the future together. We're proudly affiliated with the [Hack Club](https://hackclub.com/) network.
